@@ -40,8 +40,12 @@
 
             <div class="col-5 offset-1">
                 <h>Info</h>
-                <div class="alert alert-danger"></div>
-                Weather in Bishkek
+                <div class="alert alert-danger">
+                    <b>City:</b> {{ info.city }} <br>
+                    <b>Temperature:</b> {{ info.temp }} <sup>°C</sup><br>
+                    <img src="http://openweathermap.org/img/w/{{ info.icon }}.png" alt="Weather picture" class="img-thumbnail">
+                </div>
+
             </div>
         </div>
     </div>
